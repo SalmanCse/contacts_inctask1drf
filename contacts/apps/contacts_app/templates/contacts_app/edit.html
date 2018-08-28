@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title></title>
+
+    </head>
+    <body>
+        <form action="/update/{{ contacts.id }}" method="post">
+            {% csrf_token %}
+            <label for="name">Name: <input type="text" name="name" id="
+                name" value="{{ contacts.name }}" placeholder="{{ contacts.name }}" />
+            </label>
+            <label for="breed">Breed><input type="text" name="breed"
+            value="{{ contacts.breed }}" placeholder="{{ contacts.breed }}" />
+            </label>
+            <input type="submit" value="Update" />
+            
+            
+        
+        </form>
+    </body>
+   
+</html>
